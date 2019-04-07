@@ -14,7 +14,7 @@ public class ConstructorInjectedController {
     // @Autowired // also works
     private GreetingService greetingService;
 
-    @Autowired
+    // @Autowired // automatic wiring since 4.2
     public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
